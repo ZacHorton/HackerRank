@@ -1,3 +1,9 @@
+# The first example has the wrong output:
+# "insert i e: Insert integer e at position i."
+# 	insert(index, integer)
+# "insert 3 1: Insert 3 at index 1"
+#   insert(integer, index)
+
 if __name__ == "__main__":
     N = int(input())
     my_list = []
