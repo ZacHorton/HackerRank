@@ -15,8 +15,14 @@ if __name__ == '__main__':
     my_int = int(my_list[1])
     my_list_sorted = []
     for i in range(my_int):
-        comb = sorted(list(combinations(my_str, i + 1)))
-        for x in comb:
-            my_list_sorted.append(x)
-
-    print(my_list_sorted)
+        my_str_sorted = sorted(my_str)
+        if i == 0:
+            for letter in my_str_sorted:
+                print(letter)
+        else:
+            combos = sorted(list(combinations(my_str_sorted, i + 1)))
+            for x in combos:
+                for y in x:
+                    print(y, end="")
+                print()
+                
