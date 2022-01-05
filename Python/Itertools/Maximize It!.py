@@ -1,9 +1,6 @@
 from itertools import product
 
 if __name__ == '__main__':
-  a = [5, 4]
-  b = [7, 8, 9 ]
-  c = [5, 7, 8, 9, 10 ]
   K, M = map(int, input().split())
   ilist = []
   for i in range(K):
