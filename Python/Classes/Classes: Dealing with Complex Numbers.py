@@ -2,17 +2,30 @@ import math
 
 class Complex(object):
     def __init__(self, real, imaginary):
-        pass
+      self.real = real
+      self.imaginary = imaginary
+        
     def __add__(self, no):
-        pass
+      self.no = no
+      return self.no
+
     def __sub__(self, no):
-        pass
+      self.no = no
+      return self.no
+
     def __mul__(self, no):
-      pass
+      self.no = no
+      return self.no
+
     def __truediv__(self, no):
-      pass
+      self.no = no
+      return self.no
+      
     def mod(self):
-      pass
+      a = self.real
+      b = self.imaginary
+      return math.sqrt(a**2 + b**2)
+
     def __str__(self):
         if self.imaginary == 0:
             result = "%.2f+0.00i" % (self.real)
