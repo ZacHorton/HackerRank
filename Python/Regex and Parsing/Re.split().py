@@ -1,2 +1,4 @@
+regex_pattern = r"\D+"
+
 import re
-print(*filter(None, re.split(r'[.,]+', input())), sep='\n')
+print("\n".join(re.split(regex_pattern, input())))
